@@ -15,6 +15,6 @@ public class HelloController {
     public String hello(@RequestParam(name = "name") String name , @RequestParam("msg") String message) {
         name = StringUtils.isEmpty(name) ? "ljx" : name;
         message = StringUtils.isEmpty(message) ? "hello world" : message;
-        return String.format("hello %s , %s",name,message);
+        return String.format("hello %s , %s world",name,message);
     }
 }
